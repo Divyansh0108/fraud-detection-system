@@ -2,3 +2,24 @@ __pycache__/
 *.pyc
 .venv/
 .DS_Store
+.env
+.ipynb_checkpoints/
+
+# Logs
+logs/
+*.log
+
+# DVC local
+/data/raw/*
+!/data/raw/.gitignore
+!/data/raw/*.dvc
+/data/processed/*
+!/data/processed/.gitignore
+
+# MLflow
+mlruns/
+mlflow_artifacts/
+
+# Model artifacts
+/models/
+!/models/.gitignore
