@@ -11,5 +11,5 @@ class Transaction(BaseModel):
 class PredictionResponse(BaseModel):
     transaction_id: str
     is_fraud: bool
-    probability: bool
+    probability: float
     latency_ms: float
