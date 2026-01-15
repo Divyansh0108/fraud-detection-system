@@ -1,0 +1,18 @@
+# Ignore Git
+.git
+.gitignore
+
+# Ignore Local Environment
+.venv
+__pycache__
+*.pyc
+
+# Ignore Logs and Temp Files
+logs/
+mlruns/
+mlflow.db
+.DS_Store
+
+# Ignore Data (We usually mount this, or copy only what's needed)
+# For this specific image, we WILL copy the models, but not the raw data
+data/raw/
